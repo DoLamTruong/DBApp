@@ -1,0 +1,11 @@
+F:\BK\HK192\Database\Assignment2\DBApp\bin\Debug\DBApp.exe.config
+F:\BK\HK192\Database\Assignment2\DBApp\bin\Debug\DBApp.exe
+F:\BK\HK192\Database\Assignment2\DBApp\bin\Debug\DBApp.pdb
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.Form1.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manCustomer.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.Properties.Resources.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.csproj.GenerateResource.cache
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.csproj.CoreCompileInputs.cache
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.exe
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.pdb
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.Form2.resources
