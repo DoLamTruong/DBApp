@@ -55,12 +55,13 @@ namespace DBApp
                 Program.conn.Open();
                 SqlCommand command = Program.conn.CreateCommand();
                 command.CommandText = "INSERT INTO Customer VALUES(@id, @usename, @fullname, @phone, @mail, @hasspass, @cart)";
-                command.Parameters.AddWithValue("id", Int16.Parse(id.Text));
+                command.Parameters.AddWithValue("id", Int32.Parse(id.Text));
                 command.Parameters.AddWithValue("@usename", usename.Text);
                 command.Parameters.AddWithValue("@fullname", fullname.Text);
-                command.Parameters.AddWithValue("@email", email.Text);
+                command.Parameters.AddWithValue("@phone", phone.Text);
+                command.Parameters.AddWithValue("@mail", email.Text);
                 command.Parameters.AddWithValue("@hasspass", hasspass.Text);
-                command.Parameters.AddWithValue("cart", Int16.Parse(cart.Text));
+                command.Parameters.AddWithValue("cart", Int32.Parse(cart.Text));
                 command.ExecuteNonQuery();
                 Program.conn.Close();
             }

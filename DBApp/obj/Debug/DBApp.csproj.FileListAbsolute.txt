@@ -9,3 +9,4 @@ F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.csproj.CoreCompileInputs.
 F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.exe
 F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.pdb
 F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.Form2.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.csprojAssemblyReference.cache
