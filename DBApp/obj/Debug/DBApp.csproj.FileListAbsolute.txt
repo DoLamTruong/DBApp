@@ -10,3 +10,12 @@ F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.exe
 F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.pdb
 F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.Form2.resources
 F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.csprojAssemblyReference.cache
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manGoods.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manBasket.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manComment.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manDelivery.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manDelivery_Bill.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manItem.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manItem_Image.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manSell_Bill.resources
+F:\BK\HK192\Database\Assignment2\DBApp\obj\Debug\DBApp.manSuppliers.resources

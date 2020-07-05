@@ -20,6 +20,6 @@ namespace DBApp
             Application.Run(new Form1());
         }
 
-        public static SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=appData;Integrated Security=True");
+        public static SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=Assignment2;Integrated Security=True");
     }
 }

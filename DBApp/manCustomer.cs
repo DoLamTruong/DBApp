@@ -41,10 +41,12 @@ namespace DBApp
                 da.Fill(ds, "Customer");
                 dataGridView1.DataSource = ds;
                 dataGridView1.DataMember = "Customer";
+                dataGridView1.Columns[0].ReadOnly = true;
                 Program.conn.Close();
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                Program.conn.Close();
             }
         }
 
@@ -54,20 +56,21 @@ namespace DBApp
             {
                 Program.conn.Open();
                 SqlCommand command = Program.conn.CreateCommand();
-                command.CommandText = "INSERT INTO Customer VALUES(@id, @usename, @fullname, @phone, @mail, @hasspass, @cart)";
-                command.Parameters.AddWithValue("id", Int32.Parse(id.Text));
+                //command.CommandText = "INSERT INTO Customer( username, fullname, phone_number, email, user_pass, basket_owned) VALUES(@id, @usename, @fullname, @phone, @mail, @hasspass, @cart)";
+                command.CommandText = "exec Create_customer @usename, @fullname, @phone, @mail, @hasspass;";
                 command.Parameters.AddWithValue("@usename", usename.Text);
                 command.Parameters.AddWithValue("@fullname", fullname.Text);
                 command.Parameters.AddWithValue("@phone", phone.Text);
                 command.Parameters.AddWithValue("@mail", email.Text);
                 command.Parameters.AddWithValue("@hasspass", hasspass.Text);
-                command.Parameters.AddWithValue("cart", Int32.Parse(cart.Text));
                 command.ExecuteNonQuery();
                 Program.conn.Close();
+                MessageBox.Show("Add customer success!");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                Program.conn.Close();
             }
         }
 
@@ -77,19 +80,37 @@ namespace DBApp
             {
                 Program.conn.Open();
                 SqlCommand command = Program.conn.CreateCommand();
-                command.CommandText = "UPDATE  Customer SET  username = @usename, fullname = @fullname, phone_number = @phone, email = @mail, user_pass = @hasspass, basket_ownerd = @cart WHERE id = @id,";
-                command.Parameters.AddWithValue("id", Int16.Parse(id.Text));
-                command.Parameters.AddWithValue("usename", usename);
-                command.Parameters.AddWithValue("fullname", fullname);
-                command.Parameters.AddWithValue("email", email);
-                command.Parameters.AddWithValue("hasspass", hasspass);
-                command.Parameters.AddWithValue("cart", Int16.Parse(cart.Text));
+                command.CommandText = "exec Update_customer @id, @phone, @mail, @hasspass;";
+                command.Parameters.AddWithValue("id", Int32.Parse(id.Text));
+                command.Parameters.AddWithValue("@phone", phone.Text);
+                command.Parameters.AddWithValue("@mail", email.Text);
+                command.Parameters.AddWithValue("@hasspass", hasspass.Text);
                 command.ExecuteNonQuery();
                 Program.conn.Close();
+                MessageBox.Show("Update customer success!");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                Program.conn.Close();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Program.conn.Open();
+                SqlCommand command = Program.conn.CreateCommand();
+                command.CommandText = "DELETE FROM Customer WHERE ID = @id;";
+                command.Parameters.AddWithValue("id", Int32.Parse(id.Text));
+                command.ExecuteNonQuery();
+                Program.conn.Close();
+                MessageBox.Show("Delete customer success!");
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                Program.conn.Close();
             }
         }
     }

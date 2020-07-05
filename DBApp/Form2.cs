@@ -24,6 +24,14 @@ namespace DBApp
 
             page.Controls.Add(form);
             this.tabControl1.TabPages.Add(page);
+            /////////////////
+            manGoods formGood = new manGoods();
+            formGood.TopLevel = false;
+            formGood.Visible = true;
+            formGood.Dock = DockStyle.Fill;
+            formGood.FormBorderStyle = FormBorderStyle.None;
+
+            //page.Controls.Add(formGood);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,6 +40,11 @@ namespace DBApp
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
         {
 
         }

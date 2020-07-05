@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace DBApp
 {
-    public partial class manBill : Form
+    public partial class manDelivery_Bill : Form
     {
-        public manBill()
+        public manDelivery_Bill()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 cus = new Form1();
+            cus.ShowDialog();
+            this.Close();
         }
     }
 }

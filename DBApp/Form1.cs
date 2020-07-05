@@ -25,7 +25,7 @@ namespace DBApp
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 bi = new Form2();
+            manItem bi = new manItem();
             bi.ShowDialog();
             this.Close();
         }
@@ -51,6 +51,59 @@ namespace DBApp
             this.Hide();
             manSuppliers cus = new manSuppliers();
             cus.ShowDialog();
+            this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manComment cus = new manComment();
+            cus.ShowDialog();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manBasket cus = new manBasket();
+            cus.ShowDialog();
+            this.Close();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manDelivery bi = new manDelivery();
+            bi.ShowDialog();
+            this.Close();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manDelivery_Bill bi = new manDelivery_Bill();
+            bi.ShowDialog();
+            this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manItem_Image bi = new manItem_Image();
+            bi.ShowDialog();
+            this.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            manSell_Bill bi = new manSell_Bill();
+            bi.ShowDialog();
             this.Close();
         }
     }
